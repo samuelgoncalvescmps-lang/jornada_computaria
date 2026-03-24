@@ -1,0 +1,94 @@
+body {
+    background-color: #1f1f44;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+    display: flex;
+    font: white;
+}
+
+.Amalgamado {
+    background-color: #0c35a7;
+    padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Sombra pesada pra dar presença */
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #0f3460;
+  color: rgb(218, 218, 218);
+}
+
+/* 3. A Escrevedura (Seu campo de input) */
+.Escrevedura {
+  flex: 1; /* Faz ele crescer na linha */
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #0f3460;
+  background-color: #1a1a2e;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.Escrevedura:focus {
+  border-color: #e94560; /* Fica rosa/avermelhado quando você clica */
+}
+
+/* 4. O Botãozinho (Seu botão de adicionar) */
+.botaozinho {
+  background-color: #e94560;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.botaozinho:hover {
+  background-color: #ff2e63;
+  transform: translateY(-2px); /* Dá um pulinho pra cima */
+}
+
+/* 5. A Lista e o Deletador */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  background-color: #0f3460;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between; /* Texto na esquerda, deletador na direita */
+  align-items: center;
+  transition: 0.2s;
+    color: rgb(218, 218, 218);
+
+}
+
+li:hover {
+  background-color: #1a1a2e;
+}
+
+.deletador {
+  background-color: transparent;
+  color: #e94560;
+  border: 1px solid #e94560;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.deletador:hover {
+  background-color: #e94560;
+  color: white;
+}
